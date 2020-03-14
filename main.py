@@ -1,3 +1,5 @@
+import sys
+
 class Solution:
     def isIsomorphic(self, s: str, t: str) -> bool:
         print(self.helper(s) == self.helper(t))
@@ -15,6 +17,7 @@ class Solution:
         
         return res
 s1=Solution()
-x=input()
-y=input()
+x= sys.argv[1]
+y=sys.argv[2]
+
 s1.isIsomorphic(x,y)
